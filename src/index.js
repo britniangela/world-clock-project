@@ -22,6 +22,18 @@ function updateTime() {
       "h:mm:ss [<small>]A[</small>]"
     );
   }
+
+  let jerusalemElement = document.querySelector("#jerusalem");
+  if (jerusalemElement) {
+    let jerusalemDateElement = jerusalemElement.querySelector(".date");
+    let jerusalemTimeElement = jerusalemElement.querySelector(".time");
+    let jerusalemTimeZone = moment().tz("Asia/Jerusalem");
+
+    jerusalemDateElement.innerHTML = jerusalemTimeZone.format("MMMM Do, YYYY");
+    jerusalemTimeElement.innerHTML = jerusalemTimeZone.format(
+      "h:mm:ss [<small>]A[</small>]"
+    );
+  }
 }
 
 function updateCity(event) {
