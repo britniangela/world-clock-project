@@ -49,7 +49,7 @@ h2 {
 
 .time {
   position: relative;
-  font-size: 30px;
+  font-size: 45px;
   font-weight: bold;
   color: #ebebeb;
 }
@@ -61,6 +61,10 @@ h2 {
 
 a {
   color: #303030;
+}
+
+.all-cities-link {
+  color: #222222;
 }
 
 footer {
